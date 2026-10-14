@@ -1,0 +1,19 @@
+# Entorno virtual de Python
+venv/
+.venv/
+env/
+
+# Archivos temporales y de caché de Python
+__pycache__/
+*.pyc
+
+# Base de datos local (si usas SQLite de prueba)
+*.sqlite3
+
+# Carpeta de subidas reales de imágenes (Media)
+# (Solo se subirá fotosmuebles_test/ para las pruebas)
+imagenes/
+
+# Archivos de configuración del editor
+.vscode/
+.idea/

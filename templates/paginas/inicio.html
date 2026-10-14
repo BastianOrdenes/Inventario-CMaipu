@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}Inicio - Comercial Maipú{% endblock %}
+
+{% block contenido %}
+<!-- Cuadro de Bienvenida -->
+<div class="p-5 mb-4 bg-white rounded-3 shadow-sm border">
+    <div class="row align-items-center">
+        <!-- Columna Izquierda: Texto -->
+        <div class="col-lg-7">
+            <h1 class="display-5 fw-bold text-dark">Bienvenido a Comercial Maipú</h1>
+            <p class="fs-5 text-secondary mt-3">
+                Tu sistema de inventario y gestión de muebles de confianza. Administra nuestros productos, revisa detalles y mantén el catálogo actualizado de forma rápida y sencilla.
+            </p>
+            <div class="mt-4">
+                <a href="{% url 'muebles' %}" class="btn btn-dark btn-lg px-4">Ver Inventario de Muebles</a>
+            </div>
+        </div>
+        <!-- Columna Derecha: Logo Grande -->
+        <div class="col-lg-5 text-center mt-4 mt-lg-0">
+            <img src="{% static 'logo_empresa.jpg' %}" alt="Comercial Maipú" class="img-fluid rounded shadow border p-3 bg-white" style="width: 100%; max-width: 450px; height: auto;">
+        </div>
+    </div>
+</div>
+{% endblock %}

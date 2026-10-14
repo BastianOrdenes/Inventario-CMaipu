@@ -1,0 +1,18 @@
+info:
+  name: Delete (eliminar)
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: http://127.0.0.1:8000/muebles/11/
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzkxODc0MzYxLCJpYXQiOjE3OTE4NzQwNjEsImp0aSI6IjFiMjljNjJkMzU5YTQ1NTNhYjhlNThkOGRkMTM4YjVlIiwidXNlcl9pZCI6IjEifQ.07ZAFfKGCW1BexnZuJ6benaZ_805J7U3xYD8ogzsoyI
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

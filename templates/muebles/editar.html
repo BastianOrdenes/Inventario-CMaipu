@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Modificar Mueble - Comercial Maipú{% endblock %}
+
+{% block contenido %}
+<div class="row justify-content-center">
+    <div class="col-md-7">
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-dark text-white py-3">
+                <h4 class="mb-0 text-center">Modificar Mueble</h4>
+            </div>
+            <div class="card-body p-4 bg-light">
+                
+                <form method="post" enctype="multipart/form-data">
+                    {% include 'muebles/form.html' %}
+
+                    <div class="d-flex justify-content-end gap-2 mt-4">
+                        <a href="{% url 'muebles' %}" class="btn btn-secondary px-4">Cancelar</a>
+                        <button type="submit" class="btn btn-dark px-4">Actualizar Cambios</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% csrf_token %}
+
+{% for campo in formulario %}
+<div class="mb-3">
+    <label class="form-label fw-bold text-dark">{{ campo.label }}</label>
+    
+    {% if campo.name == 'descripcion' %}
+        <textarea class="form-control" name="{{ campo.name }}" rows="4" placeholder="Ingresa la descripción detallada del mueble...">{{ campo.value|default:'' }}</textarea>
+    {% elif campo.field.widget.input_type == 'file' %}
+        <input type="file" class="form-control" name="{{ campo.name }}">
+    {% else %}
+        <input type="{{ campo.field.widget.input_type }}" class="form-control" name="{{ campo.name }}" placeholder="Ingresa {{ campo.label|lower }}" value="{{ campo.value|default:'' }}">
+    {% endif %}
+    
+    <small class="form-text text-muted">Compruebe que la información sea la correcta.</small>
+</div>
+<div class="text-danger mb-2 small">{{ campo.errors }}</div>
+{% endfor %}

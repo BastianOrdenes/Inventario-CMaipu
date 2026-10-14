@@ -1,0 +1,24 @@
+info:
+  name: Update (actualizar)
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://127.0.0.1:8000/muebles/11/
+  body:
+    type: multipart-form
+    data:
+      - name: nombre
+        type: text
+        value: Silla Giratoria
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzkxODc0MTI4LCJpYXQiOjE3OTE4NzM4MjgsImp0aSI6Ijc5NjcxOGE1NWIxZjQ5ZTA5NTYxNWIwMTZhMjkwMjE4IiwidXNlcl9pZCI6IjEifQ.gKVvSuDLrjg9gNv--VcKId2mYWOGnzpVEKZvPIcaDiE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

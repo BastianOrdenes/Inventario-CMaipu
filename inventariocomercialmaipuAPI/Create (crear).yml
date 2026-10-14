@@ -1,0 +1,32 @@
+info:
+  name: Create (crear)
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/muebles/
+  body:
+    type: multipart-form
+    data:
+      - name: nombre
+        type: text
+        value: Silla de oficina
+      - name: descripcion
+        type: text
+        value: Silla ergonomica giratoria de alta resistencia
+      - name: imagen
+        type: file
+        value:
+          - C:\Users\HP\Desktop\fotosmuebles\sillaema.jpg
+        contentType: image/jpeg
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzkxODczNjI5LCJpYXQiOjE3OTE4NzMzMjksImp0aSI6IjAwYzhlNTE4ZmMxNDQ3NzY5YzE4YWZlM2Y2M2EzMTcyIiwidXNlcl9pZCI6IjEifQ.8eCPR_edpqU43h5KJv_g4_HWjHsMAW0yqP-YQbgOCTw
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

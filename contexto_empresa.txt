@@ -1,0 +1,18 @@
+======================================================================================
+		Informe de contexto y requerimientos
+Proyecto: Inventario Comercial Maipú
+Asignatura: Programación Back End
+======================================================================================
+1. Descripción de la empresa y problema
+Comercial Maipú es una empresa dedicada a la fabricación y venta de mobiliario para oficinas, constructoras y minería. Necesitan ordenar el control interno de su catálogo de muebles porque se desordena el registro de stock y fotos de los productos. La solución es esta aplicación web en Django conectada a MySQL para gestionar un CRUD de muebles con imágenes y panel de administración.
+--------------------------------------------------------------------------------------
+2. Procesos del sistema (Crud)
+- Listar: Muestra todos los muebles registrados con su foto, descripción y botones de acción.
+- Crear: Formulario para ingresar un nuevo mueble subiendo su imagen.
+- Editar: Permite cambiar los datos o la foto de un mueble existente.
+- Eliminar :Borra el registro de la base de datos y la foto asociada en el servidor.
+--------------------------------------------------------------------------------------
+3. Diseño de pantallas (Mockups)
+- Inicio: Menú superior de navegación y un cuadro de bienvenida con botón para ir al catálogo.
+- Tabla (Index): Grilla con ID, título, miniatura de la imagen, descripción y los botones de editar y eliminar.
+- Formulario: Campos de texto para el título y la descripción, más el botón para examinar y subir la imagen.
